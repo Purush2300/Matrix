@@ -22,18 +22,21 @@ public class Basic3 {
                 int k=0;
              System.out.println("Matrix-A values");
             for (int i = 0; i < row1; i++) {
+                
                 for (int j = 0; j < col1; j++) {
+                
+                  if(i==j){
+                    k=k+a[i][j];
+                  }
                   
-                  k=k+a[j][i];
-                 
                   
                 }
-                break;
                 
+                 
             }
-            System.out.println(k);
+           
 
 
-
+System.out.println(k);
     }
 }
