@@ -30,9 +30,9 @@ public class Basic4 {
 
             for (int i = 0; i < row1; i++) {
               
-                        int temp=a[m-1][i];
-                        a[m-1][i]=a[n-1][i];
-                        a[n-1][i]=temp;
+                        int temp=a[i][m-1];
+                        a[i][m-1]=a[i][n-1];
+                        a[i][n-1]=temp;
                     }
                 
             
