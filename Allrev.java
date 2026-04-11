@@ -1,20 +1,24 @@
 public class Allrev {
     public static void main(String[] args) {
         
-int []a={1,1,1,1,1,1};
-int count=0;
-int l=0;
+int []a={1, 2, 2, 4, 3, 1, 4};
+
+
        for(int i=0;i<a.length;i++){
-     if(a[i]!=0){
-        count++;
-     }
-    l= Math.max(l, count);
-    if(a[i]==0){
-        count=0;
-    }
+        int count=0;
+        for (int j = 0; j < a.length; j++) {
+            if(a[i]==a[j]){
+                count++;
+            }
+            
+        }
+        if(count==1){
+ System.out.println(a[i]);
+        }
+       
        } 
        
-       System.out.println(l);
+     
 
     }
 }
