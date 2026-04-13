@@ -1,33 +1,27 @@
 public class Basic9 {
     public static void main(String[] args) {
-        int []a={1,1,1,3,3,2,2,2};
-        int k=8;
-        int []ans=new int[k/3];
-        int index=0;
-
-        for (int i = 0; i < a.length; i++) {
-            if(a.length!=0 || ans[0]!=a[i]){
-                int count=0;
-                for (int j = 0; j < a.length; j++) {
-                    if(a[i]==a[j]){
-                        count++;
-                    }
-                }
-                if(count>k/3){
-                    ans[index]=a[i];
-                    index++;
-                }
-            }
-            int l=ans.length;
-            if(l>2){
-                break;
-            }
-            
+        int []a={1,3,6,7,8,12,14,16};
+        int k=16;
+       int low=0;
+       int high=a.length-1;
+       for (int i = 0; i < a.length; i++) {
+        
+        int mid =(low+high)/2;
+        if(a[mid]==k){
+            System.out.println(a[mid]);
+            return;
         }
-        for (int i = 0; i < ans.length; i++) {
-            System.out.print(ans[i]+" ");
+        if(k<a[mid]){
+            high=mid-1;
+
+        }
+        else{
+            low=mid+1;
         }
 
 
+       }
+
+System.out.println(a[low]);
     }
 }
