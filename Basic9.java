@@ -7,7 +7,7 @@ public class Basic9 {
        int high=a.length-1;
        while (low<=high) {
         int mid=(low+high)/2;
-        if(a[mid]>k){
+        if(a[mid]>=k){
            ans=mid;
            high=mid-1;
         }
