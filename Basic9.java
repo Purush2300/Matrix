@@ -1,14 +1,17 @@
 public class Basic9 {
     public static void main(String[] args) {
-        int []a={1,3,6,7,8,12,14,16};
-        int k=6;
+        int []a={1,3,7,8,12,14,16};
+        int k=13;
+        int floor=-1;
+        int ceil=-1;
+        int n= a.length;
        int low=0;
-       int ans=a.length;
+      
        int high=a.length-1;
        while (low<=high) {
         int mid=(low+high)/2;
         if(a[mid]>=k){
-           ans=mid;
+           ceil=a[mid];
            high=mid-1;
         }
         else{
@@ -16,6 +19,25 @@ public class Basic9 {
         }
         
        }
-       System.out.println(ans);
+       //LArgest <=x------Floor
+       int i=0;
+       int j=a.length-1;
+       while (i<=j) {
+        int mid =(i+j)/2;
+        if(a[mid]<=k){
+            floor=a[mid];
+            i=mid+1;
+        }
+        else{
+            j=mid-1;
+        }
+        
+       }
+
+
+
+
+
+       System.out.println(ceil+" " + floor);
     }
 }
