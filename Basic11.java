@@ -1,7 +1,7 @@
 public class Basic11 {
     public static void main(String[] args) {
         int []a={2,2,2,6,8,9,10,10};
-        int target=4;
+        int target=10;
        int lb= lowerbount(a,target);
        int up= upperbound(a,target);
 
@@ -9,8 +9,8 @@ public class Basic11 {
             System.out.println("-1,-1");
         }
         else{
-          System.out.println(lb);
-          System.out.println(up-1);
+          System.out.println(up-lb+1);
+        
         }
 
     }
@@ -31,7 +31,7 @@ public class Basic11 {
             
         }
 
-return ans;
+return ans-1;
        
     }
 
