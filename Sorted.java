@@ -2,7 +2,7 @@ public class Sorted {
     public static void main(String[] args) {
         int []a={7,8,9,1,2,3,4,5,6};
         int i=0;
-        int k=1;
+        int k=8;
         int j=a.length-1;
         while (i<=j) {
             int mid=(i+j)/2;
