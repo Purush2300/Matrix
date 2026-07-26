@@ -1,6 +1,6 @@
 public class Lonh {
     public static void main(String[] args) {
-        int []a={4, 5, 6, 7, 0, 1, 2,3};
+        int []a={4, 5, 6, 7, 0, 1};
         int target=0;
         int i=0;
         int j=a.length-1;
