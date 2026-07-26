@@ -1,6 +1,6 @@
 public class Rev2 {
     public static void main(String[] args) {
-        int []a={ 5, 6, 7, 0, 1, 2, 3,4};
+        int []a={ 5, 6, 7, 0, 1};
         System.out.println(minimum(a));
     }
 
