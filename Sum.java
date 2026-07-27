@@ -3,7 +3,7 @@ import java.util.*;
 public class Sum {
     public static void main(String[] args) {
         HashMap<Integer,Integer> map=new HashMap<>();
-        int []a={1,1,1,3,4,1,2,3};
+        int []a={10,10,20,18};
         int k=3;
         int count=0;
         int prefix=0;
